@@ -103,6 +103,16 @@
 		<input type="week" /></p>
 		33.Месяц
 		<input type="month" /></p>
+  <style>
+        h1 {
+            color: green;
+        }
+
+        body {
+            background-color: #c9d6ff;
+            background: linear-gradient(to right, #e2e2e2, #839ef7);
+        }
+    </style>
 		34.Ранг
 		<input type="range" /></p>
 	</body>
