@@ -10,7 +10,7 @@
 	</head>
 	
 	<body>
-		1. <a href="https://www.youtube.com/watch?v=bWNmJqgri4Q">ссылка</a>
+		1. <a href="https://www.youtube.com/watch?v=9s2sLGuadvc">ссылка</a>
 		<h1>Димир, Азиз, Муслим если вы это читаете значит у меня получилось</h1>
 		<h6>Маленький заголовок</h6>
 		Обычный
@@ -33,7 +33,7 @@
 		
 		<div>
 			<h4>9. картинка(Черкесский флаг)</h4>
-			<img src="Flag_of_Adygea.svg.png" height="200">
+			<img src="Flag_of_Adygea.svg.jpg" height="200">
 		</div>
 		
 		<table border="2">
