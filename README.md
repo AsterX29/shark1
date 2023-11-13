@@ -107,11 +107,3 @@
 		<input type="range" /></p>
 	</body>
 </html>
-
-h1{
-	color:green	
-}
-body{
-    background-color: #c9d6ff;
-    background: linear-gradient(to right, #e2e2e2, #839ef7);
-}
