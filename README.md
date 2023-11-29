@@ -27,7 +27,7 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100%;
+    height: 1080px;
     position: relative;
     background-size: cover;
     padding: 50px;
@@ -191,6 +191,7 @@ header.sticky nav a{
         </section>
         <section id="profile" style="background-image: url(2.jpg);">
             <h1>Profile</h1>
+            <h1>Тут должно быть очень много текста акриииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииии/h1>
         </section>
         <section id="social" style="background-image: url(3.jpg);">
             <h1>Social</h1>
