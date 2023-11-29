@@ -27,7 +27,7 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100%;
+    height: 10%;
     position: relative;
     background-size: cover;
     padding: 50px;
@@ -187,7 +187,7 @@ header.sticky nav a{
 
     <div id="container">
         <section id="main" style="background-image: url(1.jpg);">
-            <h1>AsmrProg</h1>
+            <h1>AsmrProg2</h1>
         </section>
         <section id="profile" style="background-image: url(2.jpg);">
             <h1>Profile</h1>
