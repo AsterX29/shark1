@@ -1,119 +1,252 @@
-# shark1
 <!DOCTYPE html>
+<html lang="en">
 
-<html>
-	<head>
-		<link rel="stylesheet" href="Акула_2.css">
-			<meta charset="UTF-8">
-			<title>Сайт_2(акула)</title>
-		<link rel="icon" href="акула.jpg" type="image">
-	</head>
-	
-	<body>
-		1. <a href="https://www.youtube.com/watch?v=9s2sLGuadvc">ссылка</a>
-		<h1>1.Заголовок </h1>
-		<h6>Маленький заголовок</h6>
-		Обычный
-		<strong>3.Жирный gjhju</strong>
-		<em>4.Курсив</em>
-		<small>5.Маленький</small>
-		<p>6.Красная строка</p>
-		<ol>
-			<li>7.Список</li>
-			<li>Элемент2</li>
-			<li>Элемент3</li>
-			<li>Элемент4</li>
-			<li>Пятый элемент</li>
-		</ol>
-		<ul>
-			<li>8.Список с точками</li>
-			<li>Список с точками1</li>
-			<li>Список с точками2</li>
-		</ul>
-		
-		<div>
-			<h4>9. картинка(Черкесский флаг)</h4>
-			<img src="Flag_of_Adygea.svg.jpg" height="200">
-		</div>
-		
-		<table border="2">
-			<tr>
-				<td>10.Таблица</td>
-				<td>Что-то</td>
-				<td>Что-то</td>
-			</tr>
-			<tr>
-				<td>Что-то2</td>
-				<td>Что-то2</td>
-				<td>Что-то2</td>
-			</tr>
-			<tr>
-				<td>Что-то3</td>
-				<td>Что-то3</td>
-				<td>Что-то3</td>
-			</tr>
-		</table>
-			<input value="11.Ввод">
-			<p><input placeholder="12.ВВод который исчезает"></p>
-			<p><textarea placeholder="13.Большой ввод для комментария"></textarea></p>
-			<p>14.Аудио</p>
-				<audio controls>
-					<source src="Адхах Дзыбов.mp3" type="audio/mpeg">
-				</audio>
-				
-				<p>15 Видео</p>
-				<video controls width="300px">
-					<source src="ТИТРЫ РОБЕРТ.mp4" >
-				</video>
-				<p>
-				
-		16.Пароль
-		<input type="password" /></p>
-		17.емаил
-		<input type="email" /></p>
-		18.ввод числа
-		<input type="number" /></p>
-		19.телефон
-		<input type="tel" /></p>
-		20.выбор (без права ошибки как я понял)
-		<input type="radio" />да<input type="radio" />кое что другое</p>
-		21.выбор
-		<input type="checkbox" />один<input type="checkbox" />два</p>
-		22.Выбор цвета
-		<input type="color" /></p>
-		23.Кнопка
-		<input type="button" /></p>
-		24.Отправить
-		<input type="submit" /></p>
-		25.Сбросить
-		<input type="reset" /></p>
-		26.Отправить файл
-		<input type="file" /></p>
-		27.Отправить картинку(устарело но пусть будет)
-		<input type="image" /></p>
-		28.Вставить ссылку
-		<input type="url" /></p>
-		29.Вставьте дату
-		<input type="date" /></p>
-		30.Вставьте время
-		<input type="time" /></p>
-		31.Текущая дата(пока не работает)
-		<input type="datеtime-local" /></p>
-		32.Неделя
-		<input type="week" /></p>
-		33.Месяц
-		<input type="month" /></p>
-		34.Ранг
-		<input type="range" /></p>
-	</body>
-</html>
-  <style>
-        h1 {
-            color: green;
-        }
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Scrolling Nav</title>
+    <style>
+        
+body{
+    background-color: #000;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
 
-        body {
-            background-color: #c9d6ff;
-            background: linear-gradient(to right, #e2e2e2, #839ef7);
-        }
+#container{
+    transition: 1s all ease-in-out;
+}
+
+#container.menuopen{
+    filter: blur(8px);
+    transform: scale(1.2);
+}
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+    background-size: cover;
+    padding: 50px;
+}
+
+
+section h1{
+    font-size: 120px;
+    z-index: 2;
+}
+
+header{
+    z-index: 9999;
+    position: relative;
+}
+
+header nav{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    width: 420px;
+    z-index: 100;
+    top: 130px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: 1s all cubic-bezier(0.080, 0.9, 0.18, 1) 0.2s;
+}
+
+header nav a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 10px 16px;
+    font-size: 18px;
+    letter-spacing: 1.8px;
+    transition: 0.3s all cubic-bezier(0.080, 0.9, 0.18, 1) 0.6s, 0.3s color ease;
+}
+
+header nav a:hover{
+    color: #000;
+}
+
+header nav button{
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    width: 60px;
+    height: 60px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    position: absolute;
+    z-index: 100;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 100%;
+    cursor: pointer;
+    transform: scale(0);
+    transition: 0.3s all cubic-bezier(0.080, 0.9, 0.18, 1) 0.2s;
+}
+
+header nav button span{
+    width: 50%;
+    background-color: #fff;
+    height: 3px;
+    display: block;
+    margin: 4px auto;
+    transform: scale(0);
+    transition: 0.6s transform cubic-bezier(0.080, 0.9, 0.18, 1) 0s, 0.3s margin ease-in 0s;
+}
+
+header nav button:hover span{
+    margin: 9px auto;
+}
+
+header.sticky #logo{
+    opacity: 0;
+}
+
+header.sticky nav{
+    top: 20px;
+    padding: 0;
+    width: 80px;
+    height: 80px;
+}
+
+header.sticky nav button{
+    transform: scale(1);
+    transition-delay: 0.3s;
+}
+
+header.sticky nav button span{
+    transform: scaleX(1);
+    transition: 0.6s transform cubic-bezier(0.080, 0.9, 0.18, 1) 0.8s, 0.3s margin ease-in 0s;
+}
+
+header.sticky nav a{
+    opacity: 0;
+    transform: scale(0.3);
+    transition-delay: 0.1s;
+}
+
+@media screen and (max-width: 520px) {
+    
+    header nav{
+        height: 60px;
+        width: 390px;
+    }
+
+    header nav button{
+        width: 50px;
+        height: 50px;
+    }
+
+    header nav a{
+        font-size: 16px;
+    }
+
+    section h1{
+        font-size: 80px;
+    }
+
+    header.sticky nav{
+        width: 70px;
+        height: 70px;
+    }
+
+}
     </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="#main">Main</a>
+            <a href="#profile">Profile</a>
+            <a href="#social">Social</a>
+            <a href="http://127.0.0.1:5500/ИГРА.html">About</a>
+            <button id="menu">
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <div id="container">
+        <section id="main" style="background-image: url(1.jpg);">
+            <h1>AsmrProg</h1>
+        </section>
+        <section id="profile" style="background-image: url(2.jpg);">
+            <h1>Profile</h1>
+        </section>
+        <section id="social" style="background-image: url(3.jpg);">
+            <h1>Social</h1>
+        </section>
+        <section id="about" style="background-image: url(4.jpg);">
+            <h1>About</h1>
+        </section>
+    </div>
+   <script>
+        document.addEventListener('DOMContentLoaded', function () {
+    const header = document.querySelector('header');
+    const container = document.getElementById('container');
+    const menuButton = document.getElementById('menu');
+    const links = document.querySelectorAll('a[href^="#"]');
+
+    // Function to handle the scroll
+    function handleScroll() {
+        container.classList.remove('menuopen');
+        header.classList.toggle('sticky', window.scrollY >= 100);
+    }
+
+    // Function to handle menu button click
+    function handleMenuButtonClick() {
+        header.classList.remove('sticky');
+        container.classList.toggle('menuopen');
+    }
+
+    // Function to handle anchor links click
+    function handleLinkClick(event) {
+        event.preventDefault();
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+            targetElement.scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    }
+
+    // Function to close the menu when clicking outside and show the sticky menu
+    function handleCloseOutside(event) {
+        if (!menuButton.contains(event.target)) {
+            // Check if the click was outside the menu button
+            container.classList.remove('menuopen');
+            header.classList.add('sticky');
+        }
+    }
+
+    window.addEventListener('scroll', handleScroll);
+    menuButton.addEventListener('click', handleMenuButtonClick);
+    links.forEach(link => link.addEventListener('click', handleLinkClick));
+
+    // Listen for clicks anywhere in document
+    document.addEventListener('click', handleCloseOutside);
+});
+    </script>
+</body>
+
+</html>
