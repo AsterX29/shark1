@@ -27,7 +27,7 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
-    height:100pv;
+    width: 100pv;
     position: relative;
     background-size: cover;
     padding: 50px;
@@ -158,7 +158,7 @@ header.sticky nav a{
     }
 
     section h1{
-        font-size: 80px;
+        font-size: 24px;
     }
 
     header.sticky nav{
@@ -174,10 +174,11 @@ header.sticky nav a{
 
     <header>
         <nav>
-            <a href="#main">Main</a>
-            <a href="#profile">Profile</a>
-            <a href="#social">Social</a>
             <a href="http://127.0.0.1:5500/ИГРА.html">About</a>
+            <a href="#main">Main1</a>
+            <a href="#http://127.0.0.1:5500/ИГРА.html">Profile</a>
+            <a href="#social">Social</a>
+            
             <button id="menu">
                 <span></span>
                 <span></span>
@@ -187,7 +188,7 @@ header.sticky nav a{
 
     <div id="container">
         <section id="main" style="background-image: url(1.jpg);">
-            <h1>AsmrProg4</h1>
+            <h1>AsmrProg</h1>
         </section>
         <section id="profile" style="background-image: url(2.jpg);">
             <h1>Profile</h1>
