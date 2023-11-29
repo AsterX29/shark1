@@ -28,6 +28,7 @@ section{
     align-items: center;
     justify-content: center;
     height: 1080px;
+    width: 1920px;
     position: relative;
     background-size: cover;
     padding: 50px;
