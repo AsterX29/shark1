@@ -27,7 +27,7 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 1920px;
+    height:100pv;
     position: relative;
     background-size: cover;
     padding: 50px;
