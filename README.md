@@ -27,8 +27,8 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 1080px;
-    width: 1920px;
+    height: 100%;
+    width: 100%;
     position: relative;
     background-size: cover;
     padding: 50px;
