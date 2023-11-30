@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,7 +6,7 @@
     <title>Пример страницы с кнопками</title>
     <style>
 	body{
-            background-color: aqua;
+            background-color:dimgray;
         }
         #content {
             text-align: center;
@@ -28,9 +27,6 @@
     </style>
 </head>
 <body>
-    <audio controls>
-        <source src="Адхах Дзыбов.mp3" type="audio/mp3">
-    </audio>
     
 
 <!-- Блок с картинкой и текстом -->
