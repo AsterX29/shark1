@@ -43,7 +43,7 @@
 <body>
 
     <audio id="backgroundMusic" autoplay loop>
-        <source src="Бригад.mp3" type="audio/mp3">
+        <source src="Бригада.mp3" type="audio/mp3">
         Ваш браузер не поддерживает воспроизведение аудио.
       </audio>
       <button id="toggleButton">Эпичная фоновая музыка</button>
