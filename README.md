@@ -20,7 +20,7 @@
             margin: 5px;
         }
         img{
-            width: 500px;
+            width: 250px;
         }
     </style>
 </head>
@@ -32,7 +32,7 @@
 
 <!-- Блок с картинкой и текстом -->
 <div id="content">
-    <!-- <img src="Регистрация1/Flag_of_Adygea.svg.png"> -->
+    <img src="маф1.jpeg"> 
     <p>1 Вы пацан ходите в школу и пахан предлагает вам записаться на единоборства </p>
 <button class="button" onclick="changeContent('page1')">Записаться в споривную секцию</button>
 <button class="button" onclick="changeContent('page2')">Продолжать и дальше ничего не делать(я бы не советовал нажимать)</button>
