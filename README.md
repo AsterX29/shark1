@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Пример страницы с кнопками</title>
     <style>
+	body{
+            background-color: aqua;
+        }
         #content {
             text-align: center;
             padding: 20px;
