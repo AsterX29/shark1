@@ -6,9 +6,10 @@
     <title>Пример страницы с кнопками</title>
     <style>
 	body{
-            background-color:dimgray;
+            background-color:rgb(32, 31, 31);
         }
         #content {
+            background-color: rgb(255 255 255/.3) ;
             text-align: center;
             padding: 20px;
             border: 1px solid #ccc;
